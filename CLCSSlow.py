@@ -7,6 +7,7 @@ import numpy as np
 
 arr = np.zeros((2048, 2048), dtype=int)
 
+# Using the LCS defined in LCS.py
 def LCS(A,B):
 	m = len(A)
 	n = len(B)
@@ -26,6 +27,8 @@ def cut(str, i):
 	return str[i:] + str[:i]
 
 def CLCS(A, B):
+	# Make sure we only loop through the
+	# cut locations for the smallest string
 	if len(A) > len(B):
 		tmp = A
 		A = B
