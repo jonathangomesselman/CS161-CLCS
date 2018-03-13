@@ -6,7 +6,7 @@ import sys
 import numpy as np
 
 # Pre-allocate the array
-arr = np.zeros((4096, 4096), dtype=int)
+arr = np.zeros((4096, 2048), dtype=int)
 # Have one array for the back-pointers
 back_pts = np.zeros((2048, 2048), dtype=int)
 
